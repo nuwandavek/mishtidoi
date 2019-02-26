@@ -1,0 +1,21 @@
+{
+  "width": 900,
+  "height": 560,
+  "padding": {"top": 0, "left": 0, "right": 0, "bottom": 0},
+  "data": [
+    {
+        "name": "states",
+        "url": "data/india.json",
+        "format": {"type": "topojson", "feature": "states"},
+        "transform": [
+        {
+            "type": "geopath", "projection": "albersUsa",
+            "scale": 1200, "translate": [450, 280]
+        }
+        ]
+    }
+  ],
+  "scales": [],
+  "signals": [],
+  "marks": []
+}
