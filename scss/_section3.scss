@@ -1,0 +1,26 @@
+$red-shade: #c0392b;
+$black-shade: #333;
+$cream-shade: #eee;
+$big-title-font : 'Josefin Sans';
+$small-title-font : 'VT323';
+$content-font : 'Source Sans Pro';
+
+
+
+#section-3{
+    background-color: $cream-shade;
+}
+
+.city{
+    cursor: pointer;
+}
+
+.scrolly-elements{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 0.5;
+}
+
+.active-scroll{
+    opacity: 1;
+}

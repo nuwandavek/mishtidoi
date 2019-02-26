@@ -1,0 +1,232 @@
+source,target,value
+American,Asian,9
+American,Beverages,9
+American,Burger,9
+American,Cafe,9
+American,Chinese,9
+American,Continental,9
+American,Desserts,9
+American,Fast Food,9
+American,Italian,9
+American,Mexican,9
+American,North Indian,9
+American,Salad,9
+Andhra,Biryani,9
+Andhra,Chinese,9
+Andhra,North Indian,9
+Andhra,South Indian,9
+Arabian,Biryani,9
+Arabian,Chinese,9
+Arabian,North Indian,9
+Asian,Chinese,8
+Asian,Continental,9
+Asian,European,9
+Asian,Italian,9
+Asian,Japanese,9
+Asian,Momos,9
+Asian,North Indian,8
+Asian,Salad,9
+Asian,Thai,9
+BBQ,Chinese,9
+BBQ,North Indian,9
+Bakery,Cafe,9
+Bakery,Chinese,9
+Bakery,Desserts,7
+Bakery,Fast Food,8
+Bakery,Italian,9
+Bengali,Chinese,9
+Bengali,North Indian,9
+Beverages,Biryani,9
+Beverages,Burger,9
+Beverages,Cafe,9
+Beverages,Chinese,8
+Beverages,Continental,9
+Beverages,Desserts,8
+Beverages,Fast Food,8
+Beverages,Healthy Food,9
+Beverages,Ice Cream,9
+Beverages,Italian,9
+Beverages,Juices,9
+Beverages,North Indian,8
+Beverages,Pizza,9
+Beverages,Salad,9
+Beverages,Sandwich,9
+Beverages,South Indian,9
+Beverages,Street Food,9
+Biryani,Chinese,7
+Biryani,Desserts,9
+Biryani,Fast Food,9
+Biryani,Hyderabadi,9
+Biryani,Indian,9
+Biryani,Kebab,9
+Biryani,Mughlai,8
+Biryani,North Indian,6
+Biryani,Rolls,9
+Biryani,Seafood,9
+Biryani,South Indian,8
+Burger,Cafe,9
+Burger,Chinese,9
+Burger,Continental,9
+Burger,Desserts,9
+Burger,Fast Food,7
+Burger,Italian,9
+Burger,North Indian,9
+Burger,Pizza,9
+Burger,Salad,9
+Burger,Sandwich,9
+Cafe,Chinese,9
+Cafe,Continental,8
+Cafe,Desserts,8
+Cafe,Fast Food,8
+Cafe,Healthy Food,9
+Cafe,Italian,8
+Cafe,Mexican,9
+Cafe,North Indian,9
+Cafe,Pizza,9
+Cafe,Salad,9
+Cafe,Sandwich,9
+Cafe,Tea,9
+Chettinad,North Indian,9
+Chettinad,South Indian,9
+Chinese,Continental,6
+Chinese,Desserts,9
+Chinese,Fast Food,6
+Chinese,Finger Food,9
+Chinese,Hyderabadi,9
+Chinese,Indian,8
+Chinese,Italian,7
+Chinese,Japanese,9
+Chinese,Juices,9
+Chinese,Kebab,9
+Chinese,Kerala,9
+Chinese,Lebanese,9
+Chinese,Malwani,9
+Chinese,Mexican,9
+Chinese,Mithai,9
+Chinese,Momos,7
+Chinese,Mughlai,6
+Chinese,North Indian,1
+Chinese,Pizza,9
+Chinese,Rolls,9
+Chinese,Salad,9
+Chinese,Seafood,7
+Chinese,South Indian,6
+Chinese,Street Food,8
+Chinese,Thai,7
+Chinese,Tibetan,9
+Continental,Desserts,9
+Continental,European,9
+Continental,Fast Food,9
+Continental,Finger Food,9
+Continental,Healthy Food,9
+Continental,Indian,9
+Continental,Italian,7
+Continental,Lebanese,9
+Continental,Mediterranean,9
+Continental,Mexican,9
+Continental,Momos,9
+Continental,Mughlai,9
+Continental,North Indian,6
+Continental,Pizza,9
+Continental,Salad,8
+Continental,Sandwich,9
+Continental,Seafood,9
+Continental,South Indian,9
+Continental,Thai,9
+Desserts,Fast Food,7
+Desserts,Healthy Food,9
+Desserts,Ice Cream,7
+Desserts,Italian,8
+Desserts,Juices,9
+Desserts,Mithai,9
+Desserts,North Indian,8
+Desserts,Pizza,9
+Desserts,Rolls,9
+Desserts,Salad,9
+Desserts,Sandwich,9
+Desserts,South Indian,9
+Desserts,Street Food,9
+European,Italian,9
+European,Mediterranean,9
+European,North Indian,9
+European,Salad,9
+Fast Food,Healthy Food,8
+Fast Food,Ice Cream,9
+Fast Food,Italian,8
+Fast Food,Juices,9
+Fast Food,Mexican,9
+Fast Food,Mithai,9
+Fast Food,Momos,8
+Fast Food,Mughlai,9
+Fast Food,North Indian,6
+Fast Food,Pizza,7
+Fast Food,Rolls,8
+Fast Food,Salad,8
+Fast Food,Sandwich,9
+Fast Food,South Indian,8
+Fast Food,Street Food,8
+Finger Food,Italian,9
+Finger Food,North Indian,9
+Healthy Food,Italian,9
+Healthy Food,Juices,9
+Healthy Food,North Indian,9
+Healthy Food,Salad,8
+Healthy Food,Sandwich,9
+Hyderabadi,North Indian,9
+Ice Cream,North Indian,9
+Indian,Italian,9
+Indian,Kebab,9
+Indian,Mughlai,9
+Indian,North Indian,9
+Italian,Lebanese,9
+Italian,Mediterranean,9
+Italian,Mexican,8
+Italian,Momos,9
+Italian,North Indian,7
+Italian,Pizza,7
+Italian,Salad,8
+Italian,Sandwich,9
+Italian,Seafood,9
+Italian,South Indian,9
+Italian,Thai,9
+Japanese,Thai,9
+Juices,North Indian,9
+Juices,Salad,9
+Kebab,Mughlai,9
+Kebab,North Indian,8
+Kebab,Rolls,9
+Kerala,North Indian,9
+Kerala,South Indian,9
+Lebanese,North Indian,9
+Maharashtrian,North Indian,9
+Malwani,North Indian,9
+Malwani,Seafood,9
+Mangalorean,Seafood,9
+Mediterranean,North Indian,9
+Mexican,North Indian,9
+Mithai,North Indian,9
+Mithai,South Indian,9
+Mithai,Street Food,8
+Momos,Mughlai,9
+Momos,North Indian,8
+Momos,Rolls,9
+Momos,Thai,9
+Momos,Tibetan,9
+Mughlai,North Indian,5
+Mughlai,Rolls,9
+Mughlai,Seafood,9
+North Indian,Pizza,9
+North Indian,Rajasthani,9
+North Indian,Rolls,8
+North Indian,Salad,9
+North Indian,Sandwich,9
+North Indian,Seafood,7
+North Indian,South Indian,5
+North Indian,Street Food,7
+North Indian,Thai,9
+Pizza,Salad,9
+Pizza,Sandwich,9
+Salad,Sandwich,9
+Seafood,South Indian,9
+Seafood,Thai,9
+South Indian,Street Food,8

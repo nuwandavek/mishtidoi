@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+    <head>
+        <title>MishtiDoi</title>
+        <meta property="og:url"           content="https://vivekaithl.co/mishtidoi" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="MishtiDoi" />
+        <meta property="og:description"   content="Analysis of Indian Restaurant Landscape" />
+        <meta property="og:image"         content="https://dl.dropboxusercontent.com/s/pkvd26p9t25biyj/mishtidoi.png" />
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type ="module" src="js/jsmain.js"></script>
+        <script type="module" src="js/cloud.js"></script>
+        <link rel="stylesheet" href="css/cssmain.css">
+        <link href="https://fonts.googleapis.com/css?family=VT323|Josefin+Sans|Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="https://vega.github.io/vega/vega.min.js"></script>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="res/jquery.waypoints.min.js"></script>
+        
+
+
+
+
+    </head>
+    <body>
+        <div id="section-1" class="light-font">
+            <div id="title">Mishitidoi</div>
+            <p id='title-sub'>Prepared with <i class="fas fa-heart"></i> by</p>
+            <p id='title-name'>vivek aithal</p>
+            <div id="description">
+                <p id="emojis">  
+                    &#x1F35E  &#x1F950  &#x1F956  &#x1F95E  &#x1F9C0  &#x1F357  &#x1F354  &#x1F35F  &#x1F355  &#x1F32D  
+                    &#x1F96A  &#x1F32E  &#x1F32F  &#x1F959  &#x1F373  &#x1F958  &#x1F372  &#x1F963  &#x1F957  &#x1F37F  
+                    &#x1F96B  &#x1F371  &#x1F358  &#x1F359  &#x1F35A  &#x1F35B  &#x1F35C  &#x1F35D  &#x1F362  
+                    &#x1F363  &#x1F364  &#x1F365  &#x1F361  &#x1F95F  &#x1F961  &#x1F366  &#x1F367  &#x1F368  &#x1F369  
+                    &#x1F382  &#x1F36E  &#x1F36F  &#x1F95B  &#x1F375  &#x1F376  &#x1F37E  &#x1F377  &#x1F378  &#x1F379  
+                    &#x1F37A  &#x1F37B  &#x1F942  &#x1F943  &#x1F964
+                </p>
+            <div id='load-icon'><div class='loader'>Loading</div><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+            
+            </div>
+            <!-- <a id="scroll-down" href="#section-2"><i class="fas fa-angle-down"></i></a> -->
+            
+        </div>
+        <div id='rest-body'>
+                <div id="section-2" class="dark-font section">
+                        <div class="section-content">
+                        <p class="head-content">Analysis of Indian Restaurants<br>
+                            <span class="content-tiny">{with data scraped from Zomato}</span>
+                        </p>
+                        <div class="screen-content">
+                            <div id="plot-1" class="two-part"></div>
+                            <div class="two-part">
+                                    <div class="body-content">
+                                        <p>
+                                            After ogling at pudding’s data story on <a style="text-decoration: none" href='https://pudding.cool/2018/02/restaurants/'>‘Gastronomic Borders in the US’</a>, I wondered what food preferences of Indians look like. The following data story is an effort to answer this question, and many more I stumbled upon along the way. I began by looking at restaurant data from multiple sources, which turned out to be woefully inadequate. Finally, I decided to scrape all restaurant listings on Zomato - an Indian restaurant search and discovery platform - for restaurant cuisines, locations, cost and ratings. This, by no means is a complete representation of Indian food habits - but its a sufficiently large database to explore what urban Indians like to eat outside home. Hope you enjoy this :) 
+                                            <br><br>
+                                            (<strong>ProTip :</strong> Hover (or in case of mobiles, click) over as many shapes as possible to see numbers)
+                                        </p>
+                                        <br>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="section-3" class="dark-font section">
+                        
+                    <div class="section-content">
+                        <div class="head-content">Once upon a hungry time...</div>
+                        <div class="row-content">
+                            <div id="plot-2" class="two-part">
+                                    <svg id="plot-2-svg" width=400 height=700></svg>
+                            </div>
+                            <div id='scroll-sections-1'class="two-part">
+                                <div class="scrolly-elements col-content" id="scroll-ele-1">
+                                        <p class="huge">167607</p>
+                                        <p class="content-tiny">Total Restaurants</p>
+                                        <p class="body-content-center">On the Zomato platform, there are a total of 167607 (as of sometime in Jan, 2019) restaurants for eating out in India. </p>
+                                        <!-- <div id="percent-1"></div> -->
+                                        
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                    <p class="huge">79</p>
+                                    <p class="content-tiny">Cities</p>
+                                    <p class="body-content-center">These restaurants span over 79 cities in India. Of these 79 cities, top 7 cities (T7) [NCR, Mumbai, Bangalore, Hyderabad, Pune, Chennai and Kolkata] make up 62.5% of all restaurants on the platform. As expected, the top cities gobble up a big share of the restaurant pie.</p>
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                    <p class="huge">19 Mil</p>
+                                    <p class="content-tiny">Total Votes Cast</p>
+                                    <p class="body-content-center">Again, the votes distribution is top heavy. Around 69% of the restaurants have less than 50 votes each. So, we shall be considering the remaining 31% (52452) of them for any further analysis. T7 cities received ~4.5 times more cumulative votes than the rest.</p>
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                        <p class="huge">3.72</p>
+                                        <p class="content-tiny">Avg. Rating</p>
+                                        <p class="body-content-center">T7 cities and the rest of the cities have 3.72 and 3.73 respectively, which is pretty close. The distribution is, surprisingly not gaussian. One possible explanation is that since rating is not a mandatory activity, people use it only to register extreme experiences. This could explain why the distribution is bimodal. As to why the rating is skewed towards higher values, the rating system could be biased towards higher ratings as they offer better optics. Or or, the food is just that good in most places :)</p>
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                        <p class="huge">₹630</p>
+                                        <p class="content-tiny">Avg. Cost for Two</p>
+                                        <p class="body-content-center">The listed average cost for two ranges from ₹50 to ₹30000. Over 85% of the establishments have the avg cost less than 1000, while the 500 is the most frequent entry. The avg at T7 is 650, where as the average elsewhere is 570.</p>
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                        <p class="huge">168</p>
+                                        <p class="content-tiny">Total Cuisines</p>
+                                        <p class="body-content-center">As expected, cuisines too follow a long tail distribution. The top 15 cuisines contribute to over 75% of all restaurants. The top 3 cuisines(North-Indian, Chinese, and Fast Food) occupy ~40% of the pie.</p>
+                                </div>
+                                <div class="scrolly-elements col-content">
+                                        <p class="huge">27</p>
+                                        <p class="content-tiny">Total Categories</p>
+                                        <p class="body-content-center">Out of the 27 categories of restaurants, top 6 categories cover 88% of all restaurants. The top 2 categories (Casual Dining and Quick Bites) describe ~65% of all establishments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="break">
+                    <img style="width: 100%; display:flex" src="http://i.imgur.com/4639Pom.gif">
+                </div>
+                <div id="section-4" class="light-font section">
+                    <div class="section-content">
+                            <div class="head-content cream">What do people like to eat, across cities?</div>
+                            <div class="row-content">
+                                <div id="plot-3">
+                                        <svg id="plot-3-svg" width=800 height=500></svg>
+                                        <p class='body-content-center-2'>
+                                            North-Indian is by far the most prevalant cuisine in the T7 cities, followed by Chinese and Fast-Food. The proportion of South-Indian restaurants is higher in Bangalore, Chennai and Hyderabad, but it is no match for its northern counterpart. The other top cuisines are similarly distributed in all T7 cities. Momos, are more popular in Kolkata and Delhi than in other places.  
+                                        </p>
+                                        <div class="head-content cream">"Uska rating check karna!"</div>
+                                        <p class='body-content-center-2'>
+                                            Distribution of ratings across cuisines in various cities, is extremely interesting. Bangalore is the city with the highest Avg. Rating, followed by NCR and Hyderabad. Mumbai and Kolkata have lower average ratings. Among cuisines, Italian and Continental have the highest ratings followed by Desserts, Cafe and Beverages. The most prevalent cuisines - North-Indian, Chinese, South-Indian - however, have lower average ratings. Italian and Cafe in Bangalore are the highest rated city-cuisine combinations with 48% and 49% of the restaurants with rating over 4, respectively. Biriyani has the least >4 rated restaurants in Hyderabad! What Blasphemy. But 1 in 3 in Delhi, have >4 ratings. Cuisines like Desserts and Mughlai are decently liked across the board, whereas FastFood is poorly rated everywhere. 
+                                            <br><br>
+                                            Note : In the below graphic, each bubble represents 1%.  
+                                        </p>
+                                        <svg id="plot-4-svg" width=1000 height=700></svg>
+                                        <div class="head-content cream">"How big a hole will it burn in my pocket?"</div>
+                                        
+                                        
+                                        <svg id="plot-5-svg" width=1000 height=800></svg>
+                                        <p class='body-content-center-2'>
+                                            Italian and continental are clearly the more expensive cuisines, across cities, with Avg. Cost for two above 500 Rs in ~70% of the restaurants. Fast Food, Desserts and South Indian are generally the cheaper options. Momos are expensive in South Indian cities compared to North Indian cities.  
+                                        </p>
+                                        <!-- <svg id="plot-6-svg" width=1000 height=750></svg> -->
+                                </div>
+                                
+                            </div>
+                            
+                    </div>
+                </div>
+                <div id="section-5" class="light-font section">
+                    <div class="section-content">
+                            <div class="head-content">The World Under One Roof</div>
+                            <p class='body-content-center'>
+                                Since most restaurants have greater than one cuisine, it is interesting to see what cuisines coexist. But as expected, the most prevelant cuisines are so generic that they coexist with almost all other cuisines. Among the not-so-popular, Salads are well connected, compared to its peers. 
+                            </p>
+                            <div class="col-content">
+                                <div id="plot-4">
+                                        <svg id="plot-6-svg" width=700 height=700></svg>
+                                </div>
+                                <div class="head-content">Did you just say <span style="color:#333;background:#333">redacted</span> is the Food Capital of India?! This means WAR! ARRRRRRGGGGHHHHH!</div>
+                            <p class='body-content-center'>
+                                This is a difficult, and contentious question. NCR, by far, has the most number of restaurants of all varieties, followed by Mumbai and Bnagalore. But Bangalore has a higher average rating than the other cities. There are 38 such restaurants in India with more than 5000 votes, and 4.5 average stars. Out of these, 22 (57%) are in Bangalore, 5 are in Hyderabad and 4 each in Kolkata and Mumbai. Chennai has 2 and Delhi has 1. What makes a city better than another with respect to food? Is it the variety? Is it the depth of options in any variety? Does the food have to be affordable? Or do good ratings trump everything else? The answer is probably a linear combination of all these factors. And that's as far as I'll go to answer this question. Meanwhile, you can pit cuisines against each other and see which one wins, across India.  
+                            </p>
+                                <div id="plot-5" class="col-content">
+                                    <div class="row-contnet">
+                                        <select  id='left-dd' class="dd">
+                                          </select>
+                                          Vs 
+                                          <select id='right-dd' class="dd">
+                                          </select>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                    </div>
+                </div>
+                <div class="tooltip" id="tooltip" style="opacity:0"></div>	
+                <div id="section-6" class="light-font">
+                    <div class="head-content cream">Epilogue</div>
+                    <p class="body-content-center-2" style="width: 60%;margin-left: 20%; margin-bottom: 3rem">I wanted to make pretty visualizations, and get an understandng of the food landscape in India. There was a lot more I wanted to do, but in the interest of getting this out as opposed to joining the ever growing pile of unfinished projects, I had to shelve all those ideas. Analysis of restaurant types, Chains vs Regular restaurants etc can be very interesting, in addition to this article. Also, menu data, if digitized will be incredible. Data from other discovery/food delivery apps such as Swiggy, Food Panda etc will add to this understanding. I have tried to verify the numbers used as much as possible, but I apologize in case any error has crept in. <br><br><span class="red">Hope you enjoyed this! If you want to discuss it further, do ping me on <a style="text-decoration: none; color:#16a085" href="https://www.facebook.com/nuwandazlartx">Facebook</a> / Mail {vivekaithal44[at]gmail[dot]com}. And if you think other people are going to like it too, do share. :) </span></p>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                    <script>window.twttr = (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                              t = window.twttr || {};
+                            if (d.getElementById(id)) return t;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                          
+                            t._e = [];
+                            t.ready = function(f) {
+                              t._e.push(f);
+                            };
+                          
+                            return t;
+                          }(document, "script", "twitter-wjs"));</script>
+                  
+                    <!-- Your like button code -->
+                    <div class="fb-like" data-href="https://vivekaithal.co/mishtidoi" data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="true" data-colorscheme='dark'></div>
+                    <div style="margin:0.5em"><a class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=Check%20this%20out!"
+                        data-size="large">
+                      Tweet</a></div>
+                      <div class="fb-comments" data-href="https://vivekaithal.co/mishtidoi" data-numposts="10" data-colorscheme='dark'></div>
+                </div>
+        </div>
+        
+
+
+
+    </body>
+</html>

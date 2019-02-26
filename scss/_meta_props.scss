@@ -1,0 +1,148 @@
+$red-shade: #c0392b;
+$black-shade: #333;
+$cream-shade: #eee;
+$big-title-font : 'Josefin Sans';
+$small-title-font : 'VT323';
+$content-font : 'Source Sans Pro';
+
+
+.light-font{
+    color: $cream-shade;
+}
+
+.dark-font{
+    color: #333;
+}
+
+.red{
+    color: $red-shade;
+}
+
+.head-content{
+    color: $red-shade;
+    font-family: $big-title-font;
+    font-size: 3rem;
+    margin-top: 2rem;
+    line-height: 4rem;
+}
+
+.title-content{
+    color: $red-shade;
+    font-family: $small-title-font;
+    font-size: 3rem;
+    line-height: 2rem;
+}
+
+.body-content{
+    width: 70%;
+    color: $black-shade;
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.body-content-center{
+    margin: 3rem;
+    color: $black-shade;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.body-content-center-2{
+    margin: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.content-tiny{
+    color: $red-shade;
+    font-size: 1rem;
+    font-family: $small-title-font;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+}
+
+.section{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-content{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: normal;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    padding: 1rem;;				
+    font: 12px sans-serif;		
+    background:$cream-shade;	
+    border: 0px;		
+    border-radius: 0.1rem;			
+    pointer-events: none;			
+}
+
+.tooltip-title{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $red-shade;
+    font-size: 0.9rem;
+}
+.tooltip-body{
+    font-size: 0.7rem;
+    color: $black-shade;
+}
+
+.row-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-part{
+    flex: 1;
+}
+
+.huge{
+    font-size: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+.screen-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+@media only screen and (max-width: 1024px) {
+
+.screen-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.content-tiny{
+    color: $red-shade;
+    font-size: 1rem;
+    font-family: $small-title-font;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+}

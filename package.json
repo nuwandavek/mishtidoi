@@ -1,0 +1,27 @@
+{
+  "name": "mishtidoi",
+  "version": "1.0.0",
+  "description": "Analysis of Indian restaurant data scraped from zomato",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuwandavek/mishtidoi.git"
+  },
+  "author": "Vivek Aithal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nuwandavek/mishtidoi/issues"
+  },
+  "homepage": "https://github.com/nuwandavek/mishtidoi#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "natives": "^1.1.6"
+  }
+}

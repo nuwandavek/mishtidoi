@@ -1,0 +1,26 @@
+$red-shade: #c0392b;
+$black-shade: #333;
+$cream-shade: #eee;
+$big-title-font : 'Josefin Sans';
+$small-title-font : 'VT323';
+$content-font : 'Source Sans Pro';
+$yellow_shade : #f39c12;
+
+#section-4{
+    background: $black-shade;
+    // height: 80vh;
+}
+.cream{
+    color : $cream-shade;
+}
+
+
+.links line {
+stroke: #aaa;
+}
+
+.nodes circle {
+pointer-events: all;
+stroke: none;
+stroke-width: 40px;
+}

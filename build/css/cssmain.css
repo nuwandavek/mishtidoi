@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  text-align: center;
+  font-family: 'Roboto Condensed';
+  margin: 0px;
+  font-size: 1.5em; }
+
+.light-font {
+  color: #eee; }
+
+.dark-font {
+  color: #333; }
+
+.red {
+  color: #c0392b; }
+
+.head-content {
+  color: #c0392b;
+  font-family: "Josefin Sans";
+  font-size: 3rem;
+  margin-top: 2rem;
+  line-height: 4rem; }
+
+.title-content {
+  color: #c0392b;
+  font-family: "VT323";
+  font-size: 3rem;
+  line-height: 2rem; }
+
+.body-content {
+  width: 70%;
+  color: #333;
+  font-size: 1rem;
+  text-align: justify;
+  margin-left: 15%; }
+
+.body-content-center {
+  margin: 3rem;
+  color: #333;
+  font-size: 1.2rem;
+  text-align: justify; }
+
+.body-content-center-2 {
+  margin: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: justify; }
+
+.content-tiny {
+  color: #c0392b;
+  font-size: 1rem;
+  font-family: "VT323";
+  letter-spacing: 1em;
+  text-transform: uppercase; }
+
+.section {
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; }
+
+.section-content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: normal; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+  font: 12px sans-serif;
+  background: #eee;
+  border: 0px;
+  border-radius: 0.1rem;
+  pointer-events: none; }
+
+.tooltip-title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #c0392b;
+  font-size: 0.9rem; }
+
+.tooltip-body {
+  font-size: 0.7rem;
+  color: #333; }
+
+.row-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.col-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.two-part {
+  flex: 1; }
+
+.huge {
+  font-size: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem; }
+
+.screen-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+@media only screen and (max-width: 1024px) {
+  .screen-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .content-tiny {
+    color: #c0392b;
+    font-size: 1rem;
+    font-family: "VT323";
+    letter-spacing: 0.2em;
+    text-transform: uppercase; } }
+
+#section-1 {
+  background-color: #c0392b;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%; }
+
+#title {
+  font-size: 8rem;
+  font-family: "Josefin Sans";
+  font-weight: 700; }
+
+#title-sub {
+  font-size: 1rem;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1.2em;
+  margin: 0px; }
+
+#title-name {
+  font-size: 3rem;
+  font-family: "VT323";
+  margin: 0px; }
+
+#description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+#emojis {
+  width: 40%;
+  font-size: 2.5rem; }
+
+.loader {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  font-family: "VT323"; }
+
+#section-2 {
+  background-color: #fff;
+  /* height: 80vh; */ }
+
+#section-3 {
+  background-color: #eee; }
+
+.city {
+  cursor: pointer; }
+
+.scrolly-elements {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  opacity: 0.5; }
+
+.active-scroll {
+  opacity: 1; }
+
+#section-4 {
+  background: #333; }
+
+.cream {
+  color: #eee; }
+
+.links line {
+  stroke: #aaa; }
+
+.nodes circle {
+  pointer-events: all;
+  stroke: none;
+  stroke-width: 40px; }
+
+#section-5 {
+  color: #333; }
+
+.dd {
+  width: 10rem;
+  height: 2.5rem;
+  margin: 2em;
+  font-size: 1rem; }
+
+#section-6 {
+  background: #333;
+  padding: 5%; }
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px; }
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0); }
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite; }
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(19px, 0); } }
